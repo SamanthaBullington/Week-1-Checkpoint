@@ -3,27 +3,44 @@
   
 }
 
+
 header {
   height: 100px ;
-  
+  font-size: 30pt;
+  border: whitesmoke;
+  border-width: 2px;
+  border-style:solid;
+
 }
 
 body {
+  font-family: 'Jomhuria', cursive;
+  font-size:x-large;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
+    padding-top: 100px; 
 }
+
 
 main {
   flex-grow: 1;
+    background-color:rgb(38, 34, 41);
+    color: whitesmoke;
 }
 
 .footer {
-  background-color: palegreen;
   display: block;
-  width: auto;
-  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+
 }
 
 .glow {
@@ -33,64 +50,50 @@ main {
 
 
 .hero-img {
-  min-height: 100vh;
-  min-width: 100vw;
-  background-image: url(https://images.unsplash.com/photo-1583511666372-62fc211f8377?ixid=MnwxMjA3fDB8MHxwaG90[…]GVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2479&q=80);
-  background-size: cover;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-image: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-size:cover;
 }
 
-
-
-
-.pill-btn {
-  border-radius: 25px;
-  font-size: x-large;
+.hiking {
+  border: whitesmoke;
+  border-width: 5px;
+  border-style: double;
 }
-
-
-.product {
-  max-height: 100px;
-}
-
 
 /* NOTE allows image to be cropped to fit the height and width of its parent */
 .object-fit-contain {
   object-fit: cover;
 }
 
-.spill {
-  bottom: -30px
+.object-fit-fill {
+  object-fit: fill;
+}
+
+@media screen and (min-width:600px){
+  .spill {
+    bottom: -40px;
+  }
+  
 }
 
 
-@media only screen and (min-width: 768px) {
-  .hero-img {
-    background-image: url(Dogo.png);
+@media screen and (max-width: 600px) {
+  .hide-text {
+    display: none;
   }
 }
 
 li{
-  text-align: center;
-}
-
-
-.li:before {
-  list-style:"none";
-  content: "mdi-access-point-check";
-  margin: 0, 0, 0 -15px;
-  display: inline-block;
-  width: 10px;
+  padding: 0px;
+  margin:0;
+  list-style-type: none ;
 }
 
 .bg-green {
-background-color: palegreen;
+background-color: rgb(72,28,52);
 
-}
-
-.hero-img {
-  height:min-content;
-  background-image: url(https://images.unsplash.com/photo-1583511666372-62fc211f8377?ixid=MnwxMjA3fDB8MHxwaG90[…]GVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2479&q=80);
-  background-size: cover;
 }
 
 .sticky {
@@ -101,9 +104,65 @@ background-color: palegreen;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
   transition: 0.3s;
-  margin: auto;
-  padding: auto;
-  min-width: 35vw;
+  min-width: 25vw;
+  justify-content: space-around;
+  border: 1px solid;
+  margin: 0 0px;
+  color: whitesmoke;
+  background-color:rgba(36, 41, 56, 0.925);
+  text-align: center;
 }
+.card2 {
+  padding: 10px
+}
+
+.card3 {
+  font-size: 20pt;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+
+}
+
+.first-card {
+  bottom: 20px;
+  height:200px;
+}
+
+.text-overlay{
+  color:white;
+}
+
+.centered {
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.red-text {
+  color: rgb(72,28,52)
+}
+
+form {
+  background-color: ;
+}
+
+.navbar {
+  font-size: 30pt;
+}
+
+.button {
+  background-color:rgba(36, 41, 56, 0.925);
+  color: whitesmoke;
+  border: 2px;
+  border-style:solid;
+
+}
+

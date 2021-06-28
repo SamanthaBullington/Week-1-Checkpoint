@@ -7,63 +7,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="minty.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>1st Checkpoint</title>
 </head>
 
-<main>
+<!-- <style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
 
-  <body>
-    <header class="container-fluid sticky bg-primary">
-      <div class="row">
-        <div class="col p-0">
-          <nav class="navbar navbar-expand-sm navbar-dark">
-            <a class="navbar-brand py-0 p-4" href="#">🍌Lorem Ipsum</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-              data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#shop">Shop <span class="sr-only">(current)</span></a>
-                </li>
-            </div>
-          </nav>
-        </div>
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style> -->
+
+<main class="">
+  <header class="container-fluid sticky bg-green">
+    <div class="row">
+      <div class="col p-0">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+          <a class="navbar-brand py-0 p-4" href="#">🗻Adventure Awaits</a>
+          <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <div class="nav-item">
+                <a class="nav-link" href="#Travel">Travel<span class="sr-only">(current)</span></a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="#Explore">Explore<span class="sr-only">(current)</span></a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="#Services">Services<span class="sr-only">(current)</span></a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="#Shop">Shop<span class="sr-only">(current)</span></a>
+              </div>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
+
+  <body class="debug">
 
 
-    <div class="container-fluid">
+    <div class="container-fluid d-flex">
       <div class="row hero-img">
-        <div class="col-md-4 d-flex flex-column justify-content-end justify-content-md-center pr-md-5">
-          <div class="bg-light rounded shadow p-3 d-none d-md-block">
+        <div class="col-md-4 d-flex flex-column justify-content-end justify-content-md-center offset-md-1 pr-md-5">
+          <div class="bg-light rounded shadow m-4 p-3 d-md-block">
             <form>
               <div class="form row">
                 <div class="form-group col-md-12">
-                  <label for="inputName">Name</label>
+                  <label class="red-text" for="inputName">Name</label>
                   <input type="text" class="form-control" id="inputName" placeholder="Name">
                 </div>
                 <div class="form-group col-md-12">
-                  <label for="inputEmail">E-Mail</label>
+                  <label class="red-text" for="inputEmail">E-Mail</label>
                   <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="inputPhone">Phone Number</label>
+                  <label class="red-text" for="inputPhone">Phone Number</label>
                   <input type="text" class="form-control" id="inputPhone" placeholder="Phone Number">
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="inputExt">Ext.</label>
+                  <label class="red-text" for="inputExt">Ext.</label>
                   <input type="text" class="form-control" id="inputPhone" placeholder="Ext.">
                 </div>
                 <div class="form-group col-md-12">
-                  <label for="inputMessage">Message</label>
+                  <label class="red-text" for="inputMessage">Message</label>
                   <textarea type="text" class="form-control" id="inputMessage" placeholder="Message" rows="4">
                   </textarea>
                 </div>
@@ -72,8 +102,8 @@
               <div class="form-group">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Check me out
+                  <label class="red-text" class="form-check-label" for="gridCheck">
+                    I want to receive E-Mails from Adventure Awaits
                   </label>
                 </div>
               </div>
@@ -81,102 +111,126 @@
             </form>
           </div>
         </div>
+        <div class="col-md-4 d-flex flex-column justify-content-end justify-content-md-center offset-md-1 pr-md-5">
+          <p class="centered d-sm-hidden">
+          <h1 class="hide-text text-overlay">
+            <p>With Adventure Awaits, you can see the world through a whole new lens.
+            </p>
+            With
+            local
+            residents to show you all the hidden gems at your destination, you are sure to have the adventure of a
+            lifetime!
+          </h1>
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="container-fluid row bg-green">
-      <div class="col-md-6 d-flex justify-content-end justify-content-md-center pr-md-5">
-        <ul class="card spill">
-          <li>
-            <p>Some Skill 1</p>
-            <progress value="85" max="100"></progress>
-          </li>
-          <li>
-            <p>Some Skill 2</p>
-            <progress value="90" max="100"></progress>
-          </li>
-          <li>
-            <p>Some Skill</p>
-            <progress value="90" max="100"></progress>
-          </li>
-          <li>
-            <p>Some Skill</p>
-            <progress value="70" max="100"></progress>
-          </li>
-          <li>
-            <p>Some Skill</p>
-            <progress value="93" max="100"></progress>
-          </li>
-        </ul>
+    <div class="container-fluid d-flex bg-green">
+      <div class="row">
+        <p class="centered ">
+        <h1 class="hide-text text-overlay">
+          Your trip will be made easier with our official Trip Planner, who will make sure your adventure planning is
+          stress-free so you can sit back, relax, and enjoy!
+        </h1>
+        </p>
+        <div class="col-md-6 justify-content-end justify-content-md-center offset-md-6 pr-md-5">
+          <div class="card card2 spill">
+            <ul>
+              <li class="row">
+                <i class="mdi mdi-flower"></i>
+                <p class="col-5">Enjoy Nature</p>
+                <progress value="80" max="100"></progress>
+              </li>
+              <li class="row">
+                <i class="mdi mdi-airplane"></i>
+                <p class="col-5">See New Places</p>
+                <progress value="99" max="100"></progress>
+              </li>
+              <li class="row">
+                <i class="mdi mdi-sunglasses"></i>
+                <p class="col-5">Get Some Sun</p>
+                <progress value="50" max="100"></progress>
+              </li>
+              <li class="row">
+                <i class="mdi mdi-routes"></i>
+                <p class="col-5">Tours</p>
+                <progress value="70" max="100"></progress>
+              </li>
+              <li class="row">
+                <i class="fas fa-skull"></i>
+                <p class="col-5">Chances of Survival</p>
+                <progress value="60" max="100"></progress>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6">hello
+        <div class="col-md-6 d-flex justify-content-center align-items-center p-5">
+          <Img class="hiking"
+            src="https://images.unsplash.com/photo-1617702824355-331e77d3cfba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"><img>
         </div>
-        <div class="col-md-6">hello
+        <div class="col-md-6 p-5">
+          <h3>Boldly Go</h3>
+          <p> Where the path diverges from concrete to untrodden path. Swim in the lakes and
+            rivers that are hidden gems. Adventure Awaits! </p>
+          <button type="button" class="btn button btn-primary offset-md-8">Learn More!</button>
         </div>
       </div>
     </div>
 
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card">
-            <img src="img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & Engineer</p>
-            </div>
+      <div class="row bg-green d-flex">
+        <div class="col-sm-3 m-5 col-md-push-3">
+          <div class="card card3">
+            <h4>Sarah Smith</h4>
+            <p>"Adventure awaits made my trip amazing!"</p>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & Engineer</p>
-            </div>
+        <div class="col-sm-3 m-5 col-md-pull-9">
+          <div class="card first-card">
+            <h1>John Dorik</h1>
+            <p>"I never would have known about that secret cave without them!"</p>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="img_avatar.png" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & Engineer</p>
-            </div>
+        <div class="col-sm-3 m-5 col-md-push-5">
+          <div class="card card3">
+            <h4>Alisha Keys</h4>
+            <p>"Fantastic!"</p>
           </div>
         </div>
       </div>
     </div>
+    </div>
 
     </div>
 
-
-
-
-    <footer class="container-fluid">
-      <div class="row bg-primary text-light">
-        <div class="col-md-6 order-2 order-md-1">
-          <p class="p-3 text-center">Copywrite 2021 | Made with 🍌 by Codeworks</p>
-        </div>
-        <div class="col-md-6 order-1 order-md-2">
-          <div class="row">
-            <div class="col-md-6">
-              <p>Terms and Conditions</p>
-              <p>About Us</p>
-            </div>
-            <div class="col-md-6">
-              <p>Contact Us</p>
-              <p>Careers</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
+
+  <footer class="container-fluid">
+    <div class="row text-light d-flex">
+      <div class="col-md-6 order-2 order-md-1">
+        <p class="p-3 text-center align-items-center">Copywrite 2021 | Made with 🍷 by Samantha Bullington</p>
+      </div>
+      <div class="col-md-6 order-1 order-md-2">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="p-3 text-center">Terms and Conditions</p>
+            <p class="p-3 text-center">About Us</p>
+          </div>
+          <div class="col-md-6">
+            <p class="p-3 text-center">Contact Us</p>
+            <p class="p-3 text-center">Careers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </main>
 
 </html>
