@@ -122,6 +122,10 @@ background-color: rgb(72,28,52);
   font-size: 20pt;
 }
 
+.cardIcon {
+  font-size: 28pt;
+}
+
 .container {
   display: flex;
   justify-content: center;
